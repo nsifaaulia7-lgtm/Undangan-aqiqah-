@@ -1227,6 +1227,14 @@ Wassalamu'alaikum Warahmatullahi Wabarakatuh.
 </section>
 
 <script>
+    window.addEventListener("load", function() {
+  setTimeout(() => {
+    document.getElementById("loader").style.opacity = "0";
+    setTimeout(() => {
+      document.getElementById("loader").style.display = "none";
+    }, 500);
+  }, 1000); // tampil 1 detik aja
+});
 window.addEventListener("load", () => {
   document.getElementById("loader").style.display = "none";
 });
@@ -1456,14 +1464,6 @@ el.classList.add("show");
 });
 
     }
-window.addEventListener("load", function() {
-  setTimeout(() => {
-    document.getElementById("loader").style.opacity = "0";
-    setTimeout(() => {
-      document.getElementById("loader").style.display = "none";
-    }, 500);
-  }, 1000); // tampil 1 detik aja
-});
 </script> 
 
 </body>
